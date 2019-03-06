@@ -5,7 +5,7 @@ from tensorflow.keras.layers import Layer
 
 
 class FractionalMaxPooling2D(Layer):
-    def __init__(self, pooling_ratio, pseudo_random=False, overlapping=False,
+    def __init__(self, pooling_ratio, pseudo_random=True, overlapping=True,
                 seed=0,data_format=None):
         super(FractionalMaxPooling2D, self).__init__()
         self.pooling_ratio = pooling_ratio
